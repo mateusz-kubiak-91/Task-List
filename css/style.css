@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #d3ced4
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-gap: 10px;
+}
+
+.container__item {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.js-newTask {
+    width: 80%;
+    height: 30px;
+}
+
+.js-newTask:focus {
+    background-color: beige;
+    color: slategrey;
+}
+
+.taskElements {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+}
+
+.js-done {
+    width: 25px;
+    height: 25px;
+    background-color: #2A792E;
+    border: none;
+}
+
+.js-remove {
+    width: 25px;
+    height: 25px;
+    background-color: #E33147;
+    border: none;
+}
+
+.taskValue {
+    /* display: inline-block; */
+    width: 80%;
+    height: 25px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    top: 0px;
+}
+
+hr {
+    color: rgb(123, 134, 145);
+}
+
+.container__item--addTaskButton {
+    width: 18%;
+    height: 30px;
+    background-color: #097285;
+    color: white;
+    border: none;
+}
+
+.addTask, .taskList {
+    display: block;
+    padding: 20px;
+    background-color: #EFE9F0
+}
+
